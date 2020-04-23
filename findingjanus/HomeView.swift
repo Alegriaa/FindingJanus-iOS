@@ -5,6 +5,7 @@
 //  Created by NoStress on 4/23/20.
 //  Copyright © 2020 Finding Janus. All rights reserved.
 //
+// You can do this, just keep working hard
 
 import SwiftUI
 
