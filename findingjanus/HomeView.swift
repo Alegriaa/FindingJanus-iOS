@@ -22,10 +22,16 @@ init(_ colors: Color... ){
 struct HomeView: View {
     var body: some View {
         ZStack{
+           
+            
         Color.offBlack
         
         
         VStack(spacing: 20) {
+             Text("Finding Janus")
+                .font(.largeTitle)
+                .foregroundColor(Color.white.opacity(0.7))
+            
             RoundedRectangle(cornerRadius: 25)
                 .fill(Color.offBlack)
                 .frame(width: 200, height: 200)
