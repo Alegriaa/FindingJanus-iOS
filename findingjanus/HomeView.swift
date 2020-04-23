@@ -15,49 +15,49 @@ extension Color {
 }
 
 extension LinearGradient {
-init(_ colors: Color... ){
-    self.init(gradient: Gradient(colors: colors), startPoint: .topLeading, endPoint: .bottomTrailing)
-}
+    init(_ colors: Color... ){
+        self.init(gradient: Gradient(colors: colors), startPoint: .topLeading, endPoint: .bottomTrailing)
+    }
 }
 
 struct HomeView: View {
     var body: some View {
         ZStack{
-           
             
-        Color.offBlack
-        
-        
-        VStack(spacing: 20) {
-             Text("Finding Janus")
-                .font(.largeTitle)
-                .foregroundColor(Color.white.opacity(0.7))
             
-            RoundedRectangle(cornerRadius: 25)
-                .fill(Color.offBlack)
-                .frame(width: 200, height: 200)
-                .shadow(color: Color.black.opacity(0.7),
-                        radius: 10, x: 10, y: 10)
-                .shadow(color: Color.white.opacity(0.1),
-                        radius: 6, x: -4, y: -4)
+            Color.offBlack
             
-            VStack {
-                HStack(spacing: 40) {
-                    homeButtons(icon: "house")
-                    homeButtons(icon: "person.fill")
-                    homeButtons(icon: "suit.heart.fill")
-                    homeButtons(icon: "gear")
+            
+            VStack(spacing: 20) {
+                Text("Finding Janus")
+                    .font(.largeTitle)
+                    .foregroundColor(Color.white.opacity(0.7))
+                
+                RoundedRectangle(cornerRadius: 25)
+                    .fill(Color.offBlack)
+                    .frame(width: 200, height: 200)
+                    .shadow(color: Color.black.opacity(0.7),
+                            radius: 10, x: 10, y: 10)
+                    .shadow(color: Color.white.opacity(0.1),
+                            radius: 6, x: -4, y: -4)
+                
+                VStack {
+                    HStack(spacing: 40) {
+                        homeButtons(icon: "house")
+                        homeButtons(icon: "person.fill")
+                        homeButtons(icon: "suit.heart.fill")
+                        homeButtons(icon: "gear")
                         
+                    }
+                    .offset(x: 0, y:245)
                 }
-                .offset(x: 0, y:245)
+                
+                
+                
             }
-        
-            
-            
-            }
-}
+        }
         .edgesIgnoringSafeArea(.all)
-}
+    }
 }
 
 struct HomeView_Previews: PreviewProvider {
