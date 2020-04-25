@@ -29,17 +29,21 @@ struct HomeView: View {
             
             
             VStack(spacing: 20) {
-                Text("Finding Janus")
+                Text("Gracie")
                     .font(.largeTitle)
                     .foregroundColor(Color.white.opacity(0.7))
                 
                 RoundedRectangle(cornerRadius: 25)
                     .fill(Color.offBlack)
-                    .frame(width: 200, height: 200)
+                    .frame(width: 200)
+                    
+                    .frame(height: 200)
                     .shadow(color: Color.black.opacity(0.7),
                             radius: 10, x: 10, y: 10)
                     .shadow(color: Color.white.opacity(0.1),
                             radius: 6, x: -4, y: -4)
+                
+                
                 
                 VStack {
                     HStack(spacing: 40) {
@@ -86,3 +90,4 @@ struct homeButtons: View {
         }
     }
 }
+let screen = UIScreen.main.bounds
