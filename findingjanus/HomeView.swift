@@ -33,6 +33,19 @@ struct HomeView: View {
                     .font(.largeTitle)
                     .foregroundColor(Color.white.opacity(0.7))
                 
+                RoundedRectangle(cornerRadius: 100)
+                                  .fill(Color.offBlack)
+                                  .frame(width: 100)
+                                  
+                                  .frame(height: 100)
+                                  .shadow(color: Color.black.opacity(0.7),
+                                          radius: 10, x: 10, y: 10)
+                                  .shadow(color: Color.white.opacity(0.1),
+                                          radius: 6, x: -4, y: -4)
+                
+                .offset(x: 0, y: -200 )
+                
+                
                 RoundedRectangle(cornerRadius: 25)
                     .fill(Color.offBlack)
                     .frame(width: 200)
@@ -53,8 +66,9 @@ struct HomeView: View {
                         homeButtons(icon: "gear")
                         
                     }
-                    .offset(x: 0, y:245)
+                    
                 }
+                .offset(x: 0, y: 175)
                 
                 
                 
