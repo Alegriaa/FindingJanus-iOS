@@ -29,21 +29,23 @@ struct HomeView: View {
             
             
             VStack(spacing: 20) {
-                Text("Gracie")
-                    .font(.largeTitle)
-                    .foregroundColor(Color.white.opacity(0.7))
+                
                 
                 RoundedRectangle(cornerRadius: 100)
                                   .fill(Color.offBlack)
-                                  .frame(width: 100)
+                                  .frame(width: 150)
                                   
-                                  .frame(height: 100)
+                                  .frame(height: 150)
                                   .shadow(color: Color.black.opacity(0.7),
                                           radius: 10, x: 10, y: 10)
                                   .shadow(color: Color.white.opacity(0.1),
                                           radius: 6, x: -4, y: -4)
                 
-                .offset(x: 0, y: -200 )
+              
+                
+                Text("Gracie")
+                              .font(.largeTitle)
+                              .foregroundColor(Color.white.opacity(0.7))
                 
                 
                 RoundedRectangle(cornerRadius: 25)
