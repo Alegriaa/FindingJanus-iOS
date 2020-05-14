@@ -23,9 +23,29 @@ struct LogInView: View {
                 .shadow(color: Color.white.opacity(0.1),
                         radius: 6, x: -4, y: -4)
                     .offset(x: 0, y: -120)
-                
+                VStack(spacing: 10){
                 LogIn()
+                ZStack {
+                                                 
+                                                 
+                                                
+                                                 RoundedRectangle(cornerRadius: 100)
+                                                     .fill(Color.offBlack)
+                                                   
+                                                 .overlay(
+                                                     RoundedRectangle(cornerRadius: 100)
+                                                         .stroke(Color.black,lineWidth: 5)
+                                                         .blur(radius: 4)
+                                                         .offset(x: 2, y: 2)
+                                                         .mask(RoundedRectangle(cornerRadius: 100)
+                                                             .fill(LinearGradient(Color.offBlack, Color.clear)))
+                                                 
+                                                 )
+                    }
+                                               .frame(width: 350, height: 8)
+               
                 LogIn()
+            }
             
             }
         .offset(x: 0, y: 100)
@@ -52,7 +72,7 @@ struct LogIn: View {
                                                      .shadow(color: Color.white.opacity(0.1),
                                                          radius: 6, x: -4, y: -4)
                           }
-                          .frame(width: 310, height: 50)
+                          .frame(width: 310, height: 45)
                          
                           VStack {
                               ZStack {
@@ -81,7 +101,7 @@ struct LogIn: View {
                                   )
                                     
                               }
-                              .frame(width: 300, height: 40)
+                              .frame(width: 300, height: 35)
                              
                               
                               
