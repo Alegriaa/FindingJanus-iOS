@@ -138,6 +138,7 @@ struct LogInView: View {
                                         .fill(LinearGradient(Color.offBlack, Color.clear)))
                                 
                         )
+                            // hello
                             .overlay(
                                 RoundedRectangle(cornerRadius: 100)
                                     .stroke(Color.black,lineWidth: 4)
@@ -149,6 +150,7 @@ struct LogInView: View {
                         )
                     }
                     .frame(width: 380, height: 3)
+                     .offset(x: -2, y: -2)
                 }
                 
             }
