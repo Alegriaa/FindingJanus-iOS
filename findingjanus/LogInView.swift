@@ -99,32 +99,43 @@ struct LogInView: View {
                     }
                     .frame(width: 300, height: 3)
                     
-                    LogIn()
+              
                     
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 100)
-                            .fill(Color.offBlack)
-                            
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 100)
-                                    .stroke(Color.black,lineWidth: 4)
-                                    .blur(radius: 6)
-                                    .offset(x: 2, y: 2)
-                                    .mask(RoundedRectangle(cornerRadius: 100)
-                                        .fill(LinearGradient(Color.offBlack, Color.clear)))
+                    VStack() {
+                         LogIn()
+                        Text("Forgot Password?")
+                            .font(.body)
+                            .foregroundColor(Color.white.opacity(0.8))
+                            .scaleEffect(0.8)
+                         .frame(width: 200, height: 30, alignment: .trailing)
+                        .offset(x: 50, y: 0)
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 100)
+                                .fill(Color.offBlack)
                                 
-                        )
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 100)
-                                    .stroke(Color.black,lineWidth: 4)
-                                    .blur(radius: 6)
-                                    .offset(x: -2, y: -2)
-                                    .mask(RoundedRectangle(cornerRadius: 100)
-                                        .fill(LinearGradient(Color.clear, Color.offBlack)))
-                                
-                        )
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 100)
+                                        .stroke(Color.black,lineWidth: 4)
+                                        .blur(radius: 6)
+                                        .offset(x: 2, y: 2)
+                                        .mask(RoundedRectangle(cornerRadius: 100)
+                                            .fill(LinearGradient(Color.offBlack, Color.clear)))
+                                    
+                            )
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 100)
+                                        .stroke(Color.black,lineWidth: 4)
+                                        .blur(radius: 6)
+                                        .offset(x: -2, y: -2)
+                                        .mask(RoundedRectangle(cornerRadius: 100)
+                                            .fill(LinearGradient(Color.clear, Color.offBlack)))
+                                    
+                            )
+                        }
+                        .frame(width: 360, height: 3)
+                        
                     }
-                    .frame(width: 360, height: 3)
+                    
                     ZStack {
                         RoundedRectangle(cornerRadius: 100)
                             .fill(Color.offBlack)
