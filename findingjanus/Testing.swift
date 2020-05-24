@@ -12,7 +12,26 @@ struct Testing: View {
     var body: some View {
         ZStack{
             Color.offBlack
+            
             VStack(spacing: 60){
+                ZStack {
+                    RoundedRectangle(cornerRadius: 25)
+                       
+                        .fill(Color.offBlack)
+                        .frame(width: 350)
+                        //.padding(.bottom, 52)
+                        
+                        .frame(height: 48)
+                        .shadow(color: Color.black.opacity(0.7),
+                                radius: 10, x: 10, y: 10)
+                        .shadow(color: Color.white.opacity(0.1),
+                            radius: 6, x: -4, y: -4)
+                    Text("FINDING JANUS")
+                        .font(.headline)
+                        .foregroundColor(Color.white.opacity(0.85))
+                        .frame(width: 200, height: 40)
+                    .scaledToFill()
+                }
                 ZStack {
                     RoundedRectangle(cornerRadius: 20)
                         .fill(Color.offBlack)

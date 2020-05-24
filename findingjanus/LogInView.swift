@@ -15,27 +15,32 @@ struct LogInView: View {
         ZStack{
             Color.offBlack
             VStack(spacing: 40) {
-                RoundedRectangle(cornerRadius: 25)
-                    .fill(Color.offBlack)
-                    .frame(width: 300)
-                    
-                    .frame(height: 275)
-                    .shadow(color: Color.black.opacity(0.7),
-                            radius: 10, x: 10, y: 10)
-                    .shadow(color: Color.white.opacity(0.1),
+                ZStack {
+                    RoundedRectangle(cornerRadius: 15)
+                       
+                        .fill(Color.offBlack)
+                        .frame(width: UIScreen.screenWidth)
+                        //.padding(.bottom, 52)
+                        
+                        .frame(height: 100)
+                        .shadow(color: Color.black.opacity(0.7),
+                                radius: 10, x: 10, y: 10)
+                        .shadow(color: Color.white.opacity(0.1),
                             radius: 6, x: -4, y: -4)
-     
+                    Text("FINDING JANUS")
+                        .fontWeight(.heavy)
+                        .font(.system(size: 30))
+                        .foregroundColor(Color.white.opacity(0.85))
+                        .frame(width: 400, height: 200)
+                }
                 
+                    
                 VStack(spacing: 25) {
                     LongLine()
                         .frame(width: 380, height: 3)
-                
-         
-                
+                     .offset(x: 0, y: -20)
+       
                 LogInTextBox()
-                    
-                    
-                    
                     .frame(width: 310, height: 40)
                 
                 LongLine()
@@ -55,7 +60,7 @@ struct LogInView: View {
                     .frame(width: 380, height: 3)
                 }
             }
-            
+            .padding(.top, -6.0)
             
         }
         .edgesIgnoringSafeArea(.all)
@@ -67,4 +72,5 @@ struct LogInView_Previews: PreviewProvider {
         LogInView()
     }
 }
+
 

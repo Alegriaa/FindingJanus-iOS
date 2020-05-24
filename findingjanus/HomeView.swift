@@ -168,4 +168,3 @@ struct homeButtons: View {
         }
     }
 }
-let screen = UIScreen.main.bounds
