@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		0007F5EA2451812B00777116 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0007F5E92451812B00777116 /* HomeView.swift */; };
 		0007F5EC2451850100777116 /* Testing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0007F5EB2451850100777116 /* Testing.swift */; };
+		008D67E0247A37A300C6A581 /* LogInTextBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008D67DF247A37A300C6A581 /* LogInTextBox.swift */; };
+		008D67E2247A465C00C6A581 /* LongLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008D67E1247A465C00C6A581 /* LongLine.swift */; };
+		008D67E4247A46EE00C6A581 /* ShortLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008D67E3247A46EE00C6A581 /* ShortLine.swift */; };
 		00D38B99245800D500FD1C29 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D38B98245800D500FD1C29 /* LogInView.swift */; };
 		00FDE17724517F9E00F95A4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FDE17624517F9E00F95A4D /* AppDelegate.swift */; };
 		00FDE17924517F9E00F95A4D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FDE17824517F9E00F95A4D /* SceneDelegate.swift */; };
@@ -22,6 +25,9 @@
 /* Begin PBXFileReference section */
 		0007F5E92451812B00777116 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		0007F5EB2451850100777116 /* Testing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Testing.swift; sourceTree = "<group>"; };
+		008D67DF247A37A300C6A581 /* LogInTextBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInTextBox.swift; sourceTree = "<group>"; };
+		008D67E1247A465C00C6A581 /* LongLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongLine.swift; sourceTree = "<group>"; };
+		008D67E3247A46EE00C6A581 /* ShortLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortLine.swift; sourceTree = "<group>"; };
 		00D38B98245800D500FD1C29 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		00FDE17324517F9E00F95A4D /* findingjanus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = findingjanus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00FDE17624517F9E00F95A4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +76,9 @@
 				0007F5E92451812B00777116 /* HomeView.swift */,
 				00D38B98245800D500FD1C29 /* LogInView.swift */,
 				0007F5EB2451850100777116 /* Testing.swift */,
+				008D67DF247A37A300C6A581 /* LogInTextBox.swift */,
+				008D67E1247A465C00C6A581 /* LongLine.swift */,
+				008D67E3247A46EE00C6A581 /* ShortLine.swift */,
 				00FDE17F24517FA000F95A4D /* Assets.xcassets */,
 				00FDE18424517FA000F95A4D /* LaunchScreen.storyboard */,
 				00FDE18724517FA000F95A4D /* Info.plist */,
@@ -160,8 +169,11 @@
 			files = (
 				0007F5EC2451850100777116 /* Testing.swift in Sources */,
 				00D38B99245800D500FD1C29 /* LogInView.swift in Sources */,
+				008D67E4247A46EE00C6A581 /* ShortLine.swift in Sources */,
 				00FDE17724517F9E00F95A4D /* AppDelegate.swift in Sources */,
 				00FDE17C24517F9E00F95A4D /* findingjanus.xcdatamodeld in Sources */,
+				008D67E2247A465C00C6A581 /* LongLine.swift in Sources */,
+				008D67E0247A37A300C6A581 /* LogInTextBox.swift in Sources */,
 				00FDE17E24517F9E00F95A4D /* ContentView.swift in Sources */,
 				0007F5EA2451812B00777116 /* HomeView.swift in Sources */,
 				00FDE17924517F9E00F95A4D /* SceneDelegate.swift in Sources */,
