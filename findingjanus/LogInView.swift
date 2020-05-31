@@ -19,35 +19,51 @@ struct LogInView: View {
                     RoundedRectangle(cornerRadius: 15)
                        
                         .fill(Color.offBlack)
-                        .frame(width: UIScreen.screenWidth)
+                        .frame(width: 350)
                         //.padding(.bottom, 52)
                         
-                        .frame(height: 100)
+                        .frame(height: 350)
                         .shadow(color: Color.black.opacity(0.7),
                                 radius: 10, x: 10, y: 10)
                         .shadow(color: Color.white.opacity(0.1),
                             radius: 6, x: -4, y: -4)
-                    Text("FINDING JANUS")
-                        .fontWeight(.heavy)
-                        .font(.system(size: 30))
-                        .foregroundColor(Color.white.opacity(0.85))
-                        .frame(width: 400, height: 200)
-                }
-                
+                    Text("finding janus")
                     
+                        .font(.headline)
+                        .fontWeight(.heavy)
+                        .foregroundColor(Color.white.opacity(0.8))
+                        .frame(width: 400, height: 100)
+                }
+            
                 VStack(spacing: 25) {
+                    
                     LongLine()
                         .frame(width: 380, height: 3)
                      .offset(x: 0, y: -20)
        
-                LogInTextBox()
-                    .frame(width: 310, height: 40)
+                    ZStack {
+                        TextBubble()
+                            .frame(width: 290, height: 40)
+                    
+                    Text("username..")
+                                  .font(.headline)
+                                  .foregroundColor(Color.white.opacity(0.85))
+                                  .frame(width: 200, height: 40)
+                                  .scaledToFill()
+                    }
                 
                 LongLine()
-                    .frame(width: 380, height: 3)
+                    .frame(width: 330, height: 3)
                 
-                LogInTextBox()
-                    .frame(width: 310, height: 40)
+                    ZStack {
+                        TextBubble()
+                            .frame(width: 310, height: 40)
+                        Text("password..")
+                        .font(.headline)
+                        .foregroundColor(Color.white.opacity(0.85))
+                        .frame(width: 200, height: 40)
+                        .scaledToFill()
+                    }
                 
                 Text("Forgot Password?")
                     .font(.body)
@@ -60,8 +76,6 @@ struct LogInView: View {
                     .frame(width: 380, height: 3)
                 }
             }
-            .padding(.top, -6.0)
-            
         }
         .edgesIgnoringSafeArea(.all)
     }
@@ -72,5 +86,4 @@ struct LogInView_Previews: PreviewProvider {
         LogInView()
     }
 }
-
 
