@@ -116,12 +116,6 @@ struct HomeView: View {
                                    .shadow(color: Color.white.opacity(0.1),
                                            radius: 6, x: -4, y: -4)
                                }
-                               
-                
-                
-                
-                
-                
                 VStack {
                     HStack(spacing: 40) {
                         homeButtons(icon: "house")

@@ -16,7 +16,7 @@ struct LongLine: View {
             ZStack {
                 RoundedRectangle(cornerRadius: 100)
                     .fill(Color.offBlack)
-                    .frame(width: 380, height: 3)
+                    .frame(width: 320, height: 3)
                     
                     .overlay(
                         RoundedRectangle(cornerRadius: 100)
