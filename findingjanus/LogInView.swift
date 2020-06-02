@@ -27,7 +27,7 @@ struct LogInView: View {
                                 radius: 10, x: 10, y: 10)
                         .shadow(color: Color.white.opacity(0.1),
                             radius: 6, x: -4, y: -4)
-                    Text("finding janus")
+                    Text("you can do this")
                     
                         .font(.headline)
                         .fontWeight(.heavy)
