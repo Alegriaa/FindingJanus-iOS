@@ -28,109 +28,32 @@ struct HomeView: View {
             Color.offBlack
             
             
-            VStack(spacing: 20) {
-                
-                
-                RoundedRectangle(cornerRadius: 100)
-                    .fill(Color.offBlack)
-                    .frame(width: 150)
+            
+            
+            
+            
+            
+            
+            
+            VStack(){
+              
+                HStack(spacing: 40) {
                     
-                    .frame(height: 150)
-                    .shadow(color: Color.black.opacity(0.7),
-                            radius: 10, x: 10, y: 10)
-                    .shadow(color: Color.white.opacity(0.1),
-                            radius: 6, x: -4, y: -4)
-                
-                
-                
-                Text("Gracie")
-                    .font(.largeTitle)
-                    .foregroundColor(Color.white.opacity(0.7))
-                
-                
-                RoundedRectangle(cornerRadius: 25)
-                    .fill(Color.offBlack)
-                    .frame(width: 200)
+                    homeButtons(icon: "house")
+                    homeButtons(icon: "person.fill")
+                    homeButtons(icon: "suit.heart.fill")
+                    homeButtons(icon: "gear")
                     
-                    .frame(height: 200)
-                    .shadow(color: Color.black.opacity(0.7),
-                            radius: 10, x: 10, y: 10)
-                    .shadow(color: Color.white.opacity(0.1),
-                            radius: 6, x: -4, y: -4)
-                
-                HStack(spacing: 25) {
-                    
-                    RoundedRectangle(cornerRadius: 15)
-                        .fill(Color.offBlack)
-                        .frame(width: 90)
-                        .frame(height: 90)
-                        .shadow(color: Color.black.opacity(0.7),
-                                radius: 10, x: 10, y: 10)
-                        .shadow(color: Color.white.opacity(0.1),
-                                radius: 6, x: -4, y: -4)
-                    
-                    RoundedRectangle(cornerRadius: 15)
-                        .fill(Color.offBlack)
-                        .frame(width: 90)
-                        .frame(height: 90)
-                        .shadow(color: Color.black.opacity(0.7),
-                                radius: 10, x: 10, y: 10)
-                        .shadow(color: Color.white.opacity(0.1),
-                                radius: 6, x: -4, y: -4)
-                    
-                    RoundedRectangle(cornerRadius: 15)
-                    .fill(Color.offBlack)
-                    .frame(width: 90)
-                    .frame(height: 90)
-                    .shadow(color: Color.black.opacity(0.7),
-                            radius: 10, x: 10, y: 10)
-                    .shadow(color: Color.white.opacity(0.1),
-                            radius: 6, x: -4, y: -4)
-                }
-                HStack(spacing: 25) {
-                                   
-                                   RoundedRectangle(cornerRadius: 15)
-                                       .fill(Color.offBlack)
-                                       .frame(width: 90)
-                                       .frame(height: 90)
-                                       .shadow(color: Color.black.opacity(0.7),
-                                               radius: 10, x: 10, y: 10)
-                                       .shadow(color: Color.white.opacity(0.1),
-                                               radius: 6, x: -4, y: -4)
-                                   
-                                   RoundedRectangle(cornerRadius: 15)
-                                       .fill(Color.offBlack)
-                                       .frame(width: 90)
-                                       .frame(height: 90)
-                                       .shadow(color: Color.black.opacity(0.7),
-                                               radius: 10, x: 10, y: 10)
-                                       .shadow(color: Color.white.opacity(0.1),
-                                               radius: 6, x: -4, y: -4)
-                                   
-                                   RoundedRectangle(cornerRadius: 15)
-                                   .fill(Color.offBlack)
-                                   .frame(width: 90)
-                                   .frame(height: 90)
-                                   .shadow(color: Color.black.opacity(0.7),
-                                           radius: 10, x: 10, y: 10)
-                                   .shadow(color: Color.white.opacity(0.1),
-                                           radius: 6, x: -4, y: -4)
-                               }
-                VStack {
-                    HStack(spacing: 40) {
-                        homeButtons(icon: "house")
-                        homeButtons(icon: "person.fill")
-                        homeButtons(icon: "suit.heart.fill")
-                        homeButtons(icon: "gear")
-                        
-                    }
                     
                 }
-                .offset(x: 0, y: 50)
-                
-                
+                .position(x:UIScreen.screenWidth / 2 , y:UIScreen.screenHeight - 350)
+           
                 
             }
+            
+            
+            
+            
         }
         .edgesIgnoringSafeArea(.all)
     }
@@ -145,7 +68,7 @@ struct HomeView_Previews: PreviewProvider {
 struct homeButtons: View {
     var icon: String
     var body: some View {
-        VStack {
+     
             ZStack {
                 RoundedRectangle(cornerRadius: 12)
                     .fill(Color.offBlack)
@@ -159,6 +82,6 @@ struct homeButtons: View {
                     .scaleEffect(1.8)
                     .foregroundColor(Color.white.opacity(0.7))
             }
-        }
+        
     }
 }
