@@ -36,6 +36,8 @@ struct HomeView: View {
             
             
             VStack(){
+                
+                
               
                 HStack(spacing: 40) {
                     
@@ -46,7 +48,8 @@ struct HomeView: View {
                     
                     
                 }
-                .position(x:UIScreen.screenWidth / 2 , y:UIScreen.screenHeight - 350)
+                
+              
            
                 
             }
