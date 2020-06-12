@@ -16,31 +16,36 @@ struct LogInView: View {
             Color.offBlack
             VStack(spacing: 40) {
                 ZStack {
-                    RoundedRectangle(cornerRadius: 15)
+                    RoundedRectangle(cornerRadius: 100)
                        
                         .fill(Color.offBlack)
-                        .frame(width: 350)
+                        .frame(width: 220)
                         //.padding(.bottom, 52)
                         
-                        .frame(height: 350)
+                        .frame(height: 220)
                         .shadow(color: Color.black.opacity(0.7),
                                 radius: 10, x: 10, y: 10)
                         .shadow(color: Color.white.opacity(0.1),
-                            radius: 6, x: -4, y: -4)
-                    Text("you can do this")
-                    
-                        .font(.headline)
-                        .fontWeight(.heavy)
-                        .foregroundColor(Color.white.opacity(0.8))
-                        .frame(width: 400, height: 100)
+                                radius: 6, x: -4, y: -4)
+                    VStack {
+                        Text("focus")
+                            
+                            .font(.headline)
+                            .fontWeight(.heavy)
+                            .foregroundColor(Color.white.opacity(0.8))
+                            .frame(width: 400, height: 100)
+                        Image(systemName: "suit.heart.fill")
+                            .scaleEffect(3)
+                            .foregroundColor(Color.white.opacity(0.7))
+                    }
                 }
-            
+                
                 VStack(spacing: 25) {
                     
                     LongLine()
                         .frame(width: 380, height: 3)
-                     .offset(x: 0, y: -20)
-       
+                        .offset(x: 0, y: -20)
+                    
                     ZStack {
                         TextBubble()
                             .frame(width: 290, height: 40)
