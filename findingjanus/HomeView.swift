@@ -11,6 +11,7 @@ import SwiftUI
 
 extension Color {
     static let offBlack = Color(red: 15 / 255, green: 15 / 255, blue: 20/255)
+     static let off = Color(red: 15 / 255, green: 16 / 255, blue: 15/255)
     static let offBlue = Color(red: 20 / 255, green: 25 / 255, blue: 34 / 255)
 }
 
@@ -25,7 +26,7 @@ struct HomeView: View {
         ZStack{
             
             
-            Color.offBlack
+            Color.off
             
             
             
@@ -35,7 +36,7 @@ struct HomeView: View {
             
             
             
-            VStack(){
+       
                 
                 
               
@@ -52,7 +53,7 @@ struct HomeView: View {
               
            
                 
-            }
+            
             
             
             
