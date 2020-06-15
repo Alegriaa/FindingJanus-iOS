@@ -13,79 +13,87 @@ struct HomeScreenView: View {
         ZStack{
             Color.offBlack
             
-            VStack {
-                VStack() {
+            VStack() {
                 
-                    HStack (spacing: 10){
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 100)
-                            .fill(Color.offBlack)
-                            .frame(width: 150)
-                            
-                            .frame(height: 150)
-                            .shadow(color: Color.black.opacity(0.7),
-                                    radius: 10, x: 10, y: 10)
-                            .shadow(color: Color.white.opacity(0.1),
-                                    radius: 6, x: -4, y: -4)
-                        RoundedRectangle(cornerRadius: 100)
-                            .fill(Color.offBlack)
-                            .frame(width: 145, height: 145)
-                            .shadow(color: Color.black.opacity(0.4),
-                                    radius: 10, x: 10, y: 10)
-                            .shadow(color: Color.white.opacity(0.1),
-                                    radius: 6, x: -4, y: -4)
-                        
-                        RoundedRectangle(cornerRadius: 100)
-                            .fill(Color.offBlack)
-                            .frame(width: 140, height: 140)
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 100)
-                                    .stroke(Color.black,lineWidth: 5)
-                                    .blur(radius: 4)
-                                    .offset(x: 2, y: 2)
-                                    .mask(RoundedRectangle(cornerRadius: 100)
-                                        .fill(LinearGradient(Color.off, Color.clear)))
-                                
-                        )
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 100)
-                                    .stroke(Color.black, lineWidth: 6)
-                                    .blur(radius: 4)
-                                    .offset(x: -2, y: -2)
-                                    .mask(RoundedRectangle(cornerRadius: 100)
-                                        .fill(LinearGradient(Color.clear, Color.black.opacity(0.9))))
-                        )
-                        
-                    }
-                    Spacer()
-                    VStack(spacing: 20) {
-                        RoundedRectangle(cornerRadius: 15)
-                                         .fill(Color.offBlack)
-                                         .frame(width: 150)
-                                         .frame(height: 60)
-                                         .shadow(color: Color.black.opacity(0.7),
-                                                 radius: 10, x: 10, y: 10)
-                                         .shadow(color: Color.white.opacity(0.1),
-                                             radius: 6, x: -4, y: -4)
-                     
-                        RoundedRectangle(cornerRadius: 15)
+                
+                VStack() {
+                    Text("hello")
+                        .foregroundColor(Color.white.opacity(0.6))
+                    Text("gracie")
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .scaleEffect(0.9)
+                        .foregroundColor(Color.white)
+                    
+                }
+         
+                ZStack {
+                    
+                    
+                    RoundedRectangle(cornerRadius: 100)
                         .fill(Color.offBlack)
                         .frame(width: 150)
-                        .frame(height: 60)
+                        
+                        .frame(height: 150)
                         .shadow(color: Color.black.opacity(0.7),
                                 radius: 10, x: 10, y: 10)
                         .shadow(color: Color.white.opacity(0.1),
-                            radius: 6, x: -4, y: -4)
-                    }
-                }
-                .padding()
-                Spacer()
-                Text("welcome, gracie")
+                                radius: 6, x: -4, y: -4)
                     
-                    .foregroundColor(Color.white.opacity(0.7))
-                Spacer()
-            }
-                Spacer()
+                    RoundedRectangle(cornerRadius: 100)
+                        .fill(Color.offBlack)
+                        .frame(width: 145, height: 145)
+                        .shadow(color: Color.black.opacity(0.4),
+                                radius: 10, x: 10, y: 10)
+                        .shadow(color: Color.white.opacity(0.1),
+                                radius: 6, x: -4, y: -4)
+                    
+                    RoundedRectangle(cornerRadius: 100)
+                        .fill(Color.offBlack)
+                        .frame(width: 140, height: 140)
+                        .overlay(
+                            
+                            RoundedRectangle(cornerRadius: 100)
+                                .stroke(Color.black,lineWidth: 5)
+                                .blur(radius: 4)
+                                .offset(x: 2, y: 2)
+                                .mask(RoundedRectangle(cornerRadius: 100)
+                                    .fill(LinearGradient(Color.off, Color.clear)))
+                            
+                    )
+                        .overlay(
+                            
+                            RoundedRectangle(cornerRadius: 100)
+                                .stroke(Color.black, lineWidth: 6)
+                                .blur(radius: 4)
+                                .offset(x: -2, y: -2)
+                                .mask(RoundedRectangle(cornerRadius: 100)
+                                    .fill(LinearGradient(Color.clear, Color.black.opacity(0.9))))
+                    )
+                    
+                }
+                .padding(10)
+                
+                VStack(alignment: .center) {
+                    Text("you can do this, you are capable, you are beautiful, keep going, work as hard as you can, forgive yourself along the way, you have come so far, reach out for your dreams")
+                        .font(.body)
+                        .scaleEffect(0.9)
+                        .foregroundColor(Color.white)
+                    
+                    Text("you are loved")
+                        .font(.headline)
+                        
+                        .foregroundColor(Color.white)
+                    
+                    
+                }
+                .padding(20)
+                
+                
+             
+                
+                
+                
                 
                 
                 
@@ -114,27 +122,28 @@ struct HomeScreenView: View {
                     
                     
                 }
-                Spacer()
                 
-                VStack {
-                    HomeView()
-                        
-                        .frame(width: UIScreen.screenWidth)
-                        .frame(height: 50)
-                }
+                
+                
+                HomeView()
+                    .frame(width: UIScreen.screenWidth)
+                    .frame(height: 100)
                 
                 
                 
             }
-            .frame(width: 340, height: 430)
-            .position(x: UIScreen.screenWidth/2, y: UIScreen.screenHeight - 270)
-                
+          
+            
+            
             
         }
-            
-           .edgesIgnoringSafeArea(.all)
+        .edgesIgnoringSafeArea(.all)
+        
+        
     }
- 
+     
+    
+    
 }
 
 
