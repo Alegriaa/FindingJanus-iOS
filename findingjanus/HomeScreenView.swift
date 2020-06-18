@@ -13,20 +13,69 @@ struct HomeScreenView: View {
         ZStack{
             Color.offBlack
             
-            VStack() {
+            VStack(spacing: 40) {
+                
                 
                 
                 VStack() {
+                    HStack(spacing: 176){
+                    ZStack() {
+                        RoundedRectangle(cornerRadius: 100)
+                            .fill(Color.offBlack)
+                            .frame(width: 54)
+                            
+                            .frame(height: 54)
+                            .shadow(color: Color.black.opacity(0.7),
+                                    radius: 10, x: 10, y: 10)
+                            .shadow(color: Color.white.opacity(0.1),
+                                    radius: 6, x: -4, y: -4)
+                        Image(systemName: "list.dash")
+                            .foregroundColor(Color.white)
+                            .scaleEffect(1.3)
+                        
+                        
+                        
+                        
+                        
+                    }
+                    .padding(20)
+                  
+                
+                    
+                    ZStack() {
+                        RoundedRectangle(cornerRadius: 100)
+                            .fill(Color.offBlack)
+                            .frame(width: 54)
+                            
+                            .frame(height: 54)
+                            .shadow(color: Color.black.opacity(0.7),
+                                    radius: 10, x: 10, y: 10)
+                            .shadow(color: Color.white.opacity(0.1),
+                                    radius: 6, x: -4, y: -4)
+                        Image(systemName: "person.2.fill")
+                            .foregroundColor(Color.white.opacity(0.8))
+                            .scaleEffect(1.3)
+                        
+                        
+                        
+                        
+                        
+                    }
+                    .padding(20)
+                    
+                    }
                     Text("hello")
                         .foregroundColor(Color.white.opacity(0.6))
                     Text("gracie")
                         .font(.title)
                         .fontWeight(.bold)
                         .scaleEffect(0.9)
-                        .foregroundColor(Color.white)
+                        .foregroundColor(Color.white.opacity(0.7))
                     
                 }
-         
+                
+                
+                
                 ZStack {
                     
                     
@@ -74,6 +123,7 @@ struct HomeScreenView: View {
                 }
                 .padding(10)
                 
+                
                 VStack(alignment: .center) {
                     Text("you can do this, you are capable, you are beautiful, keep going, work as hard as you can, forgive yourself along the way, you have come so far, reach out for your dreams")
                         .font(.body)
@@ -90,58 +140,48 @@ struct HomeScreenView: View {
                 .padding(20)
                 
                 
-             
+                
+                
+                //                    RoundedRectangle(cornerRadius: 15)
+                //                        .fill(Color.offBlack)
+                //                        .frame(width: screen.width)
+                //                        .frame(height: 300)
+                //                        .shadow(color: Color.black.opacity(0.7),
+                //                                radius: 10, x: 10, y: 10)
+                //                        .shadow(color: Color.white.opacity(0.1),
+                //                                radius: 6, x: -4, y: -4)
+                //                        .offset(x: 0, y: 100)
+                //
+                // Spacer()
                 
                 
                 
                 
-                
-                
-                
-                
-                HStack(spacing: 45) {
-                    
-                    RoundedRectangle(cornerRadius: 15)
-                        .fill(Color.offBlack)
-                        .frame(width: 120)
-                        .frame(height: 120)
-                        .shadow(color: Color.black.opacity(0.7),
-                                radius: 10, x: 10, y: 10)
-                        .shadow(color: Color.white.opacity(0.1),
-                                radius: 6, x: -4, y: -4)
-                    // Spacer()
-                    
-                    RoundedRectangle(cornerRadius: 15)
-                        .fill(Color.offBlack)
-                        .frame(width: 120)
-                        .frame(height: 120)
-                        .shadow(color: Color.black.opacity(0.7),
-                                radius: 10, x: 10, y: 10)
-                        .shadow(color: Color.white.opacity(0.1),
-                                radius: 6, x: -4, y: -4)
-                    
-                    
-                }
                 
                 
                 
                 HomeView()
                     .frame(width: UIScreen.screenWidth)
-                    .frame(height: 100)
+                    .frame(height: -100)
+                    .offset(x: 0, y: 100)
+                
+                
                 
                 
                 
             }
-          
+            
+            
             
             
             
         }
+            
         .edgesIgnoringSafeArea(.all)
         
         
     }
-     
+    
     
     
 }
