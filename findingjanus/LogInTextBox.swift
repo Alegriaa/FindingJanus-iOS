@@ -18,7 +18,7 @@ struct LogInTextBox: View {
             
             RoundedRectangle(cornerRadius: 100)
                 .fill(Color.offBlack)
-                .frame(width: 360, height: 50)
+                .frame(width: 359, height: 50)
                 .shadow(color: Color.black.opacity(0.4),
                         radius: 10, x: 10, y: 10)
                 .shadow(color: Color.white.opacity(0.1),
@@ -26,7 +26,7 @@ struct LogInTextBox: View {
             
             RoundedRectangle(cornerRadius: 100)
                .fill(Color.offBlack)
-               .frame(width: 350, height: 40)
+               .frame(width: 355, height: 40)
                .overlay(
                        RoundedRectangle(cornerRadius: 100)
                            .stroke(Color.black,lineWidth: 5)
