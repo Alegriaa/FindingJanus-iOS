@@ -15,6 +15,7 @@
 		008E4D3724834C7800265DB1 /* TextBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008E4D3624834C7700265DB1 /* TextBubble.swift */; };
 		00B215C12492070100F31DF8 /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B215C02492070100F31DF8 /* HomeScreenView.swift */; };
 		00D38B99245800D500FD1C29 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D38B98245800D500FD1C29 /* LogInView.swift */; };
+		00F3D7F3249C938F00057101 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F3D7F2249C938F00057101 /* Settings.swift */; };
 		00FDE17724517F9E00F95A4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FDE17624517F9E00F95A4D /* AppDelegate.swift */; };
 		00FDE17924517F9E00F95A4D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FDE17824517F9E00F95A4D /* SceneDelegate.swift */; };
 		00FDE17C24517F9E00F95A4D /* findingjanus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 00FDE17A24517F9E00F95A4D /* findingjanus.xcdatamodeld */; };
@@ -33,6 +34,7 @@
 		008E4D3624834C7700265DB1 /* TextBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBubble.swift; sourceTree = "<group>"; };
 		00B215C02492070100F31DF8 /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
 		00D38B98245800D500FD1C29 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
+		00F3D7F2249C938F00057101 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		00FDE17324517F9E00F95A4D /* findingjanus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = findingjanus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00FDE17624517F9E00F95A4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00FDE17824517F9E00F95A4D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				00FDE17D24517F9E00F95A4D /* ContentView.swift */,
 				0007F5E92451812B00777116 /* HomeView.swift */,
 				00D38B98245800D500FD1C29 /* LogInView.swift */,
+				00F3D7F2249C938F00057101 /* Settings.swift */,
 				00B215C02492070100F31DF8 /* HomeScreenView.swift */,
 				0007F5EB2451850100777116 /* Testing.swift */,
 				008D67DF247A37A300C6A581 /* LogInTextBox.swift */,
@@ -175,6 +178,7 @@
 			files = (
 				0007F5EC2451850100777116 /* Testing.swift in Sources */,
 				00D38B99245800D500FD1C29 /* LogInView.swift in Sources */,
+				00F3D7F3249C938F00057101 /* Settings.swift in Sources */,
 				008D67E4247A46EE00C6A581 /* ShortLine.swift in Sources */,
 				00B215C12492070100F31DF8 /* HomeScreenView.swift in Sources */,
 				00FDE17724517F9E00F95A4D /* AppDelegate.swift in Sources */,
