@@ -40,16 +40,19 @@ struct Settings: View {
                         Text("Account")
                             .font(.title)
                             .fontWeight(.bold)
-                            .scaleEffect(0.7)
+                            .scaleEffect(0.8)
                             .foregroundColor(Color.white.opacity(0.7))
                             .frame(width: 120, height: 25)
-                        Text(">")
-                            .font(.title)
-                            .fontWeight(.bold)
-                            .scaleEffect(0.7)
+                        Spacer()
+                        Image(systemName: "control")
+                        
+                            .scaleEffect(1.3)
                             .foregroundColor(Color.white.opacity(0.7))
+                        .offset(x: 0, y: -5)
+                     
                         
                     }
+                       .padding(30)
                     
                 }
                  .offset(x: 0, y: -250)

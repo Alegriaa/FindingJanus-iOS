@@ -138,46 +138,34 @@ struct HomeScreenView: View {
                     
                 }
                 .padding(20)
-                
-                
-                
-                
-                //                    RoundedRectangle(cornerRadius: 15)
-                //                        .fill(Color.offBlack)
-                //                        .frame(width: screen.width)
-                //                        .frame(height: 300)
-                //                        .shadow(color: Color.black.opacity(0.7),
-                //                                radius: 10, x: 10, y: 10)
-                //                        .shadow(color: Color.white.opacity(0.1),
-                //                                radius: 6, x: -4, y: -4)
-                //                        .offset(x: 0, y: 100)
-                //
-                // Spacer()
-                
-                
-                
-                
-                
+           
                 
                 
                 HomeView()
                     .frame(width: UIScreen.screenWidth)
-                    .frame(height: -100)
-                    .offset(x: 0, y: 100)
+                 
+                 
                 
                 
                 
                 
                 
             }
+            .edgesIgnoringSafeArea(.all)
             
             
             
             
             
         }
+        .frame(width: screen.width / 2)
+        .frame(width: screen.height / 2)
+            
             
         .edgesIgnoringSafeArea(.all)
+        .position(x: screen.width / 2, y: screen.height / 2)
+            
+
         
         
     }
