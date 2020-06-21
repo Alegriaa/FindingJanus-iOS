@@ -18,7 +18,7 @@ struct HomeScreenView: View {
                 
                 
                 VStack() {
-                    HStack(spacing: 176){
+                    HStack(spacing: 206){
                     ZStack() {
                         RoundedRectangle(cornerRadius: 100)
                             .fill(Color.offBlack)
@@ -38,7 +38,7 @@ struct HomeScreenView: View {
                         
                         
                     }
-                    .padding(20)
+            
                   
                 
                     
@@ -61,9 +61,11 @@ struct HomeScreenView: View {
                         
                         
                     }
-                    .padding(20)
+     
                     
                     }
+                    .padding(.top)
+                    .padding(30)
                     Text("hello")
                         .foregroundColor(Color.white.opacity(0.6))
                     Text("gracie")
@@ -137,6 +139,7 @@ struct HomeScreenView: View {
                     
                     
                 }
+                .frame(width: screen.width)
                 .padding(20)
            
                 
@@ -151,7 +154,7 @@ struct HomeScreenView: View {
                 
                 
             }
-            .edgesIgnoringSafeArea(.all)
+
             
             
             
@@ -159,11 +162,12 @@ struct HomeScreenView: View {
             
         }
         .frame(width: screen.width / 2)
-        .frame(width: screen.height / 2)
+        .frame(height: screen.height)
             
             
         .edgesIgnoringSafeArea(.all)
         .position(x: screen.width / 2, y: screen.height / 2)
+       
             
 
         
