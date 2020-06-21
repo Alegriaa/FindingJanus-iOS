@@ -18,7 +18,7 @@ struct HomeScreenView: View {
                 
                 
                 VStack() {
-                    HStack(spacing: 176){
+                    HStack(spacing: 206){
                     ZStack() {
                         RoundedRectangle(cornerRadius: 100)
                             .fill(Color.offBlack)
@@ -38,7 +38,7 @@ struct HomeScreenView: View {
                         
                         
                     }
-                    .padding(20)
+            
                   
                 
                     
@@ -61,9 +61,11 @@ struct HomeScreenView: View {
                         
                         
                     }
-                    .padding(20)
+     
                     
                     }
+                    .padding(.top)
+                    .padding(30)
                     Text("hello")
                         .foregroundColor(Color.white.opacity(0.6))
                     Text("gracie")
@@ -137,47 +139,37 @@ struct HomeScreenView: View {
                     
                     
                 }
+                .frame(width: screen.width)
                 .padding(20)
-                
-                
-                
-                
-                //                    RoundedRectangle(cornerRadius: 15)
-                //                        .fill(Color.offBlack)
-                //                        .frame(width: screen.width)
-                //                        .frame(height: 300)
-                //                        .shadow(color: Color.black.opacity(0.7),
-                //                                radius: 10, x: 10, y: 10)
-                //                        .shadow(color: Color.white.opacity(0.1),
-                //                                radius: 6, x: -4, y: -4)
-                //                        .offset(x: 0, y: 100)
-                //
-                // Spacer()
-                
-                
-                
-                
-                
+           
                 
                 
                 HomeView()
                     .frame(width: UIScreen.screenWidth)
-                    .frame(height: -100)
-                    .offset(x: 0, y: 100)
+                 
+                 
                 
                 
                 
                 
                 
             }
+
             
             
             
             
             
         }
+        .frame(width: screen.width / 2)
+        .frame(height: screen.height)
+            
             
         .edgesIgnoringSafeArea(.all)
+        .position(x: screen.width / 2, y: screen.height / 2)
+       
+            
+
         
         
     }
