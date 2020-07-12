@@ -68,20 +68,21 @@ struct SettingsSection: View {
         VStack() {
      
             ZStack {
-                RoundedRectangle(cornerRadius: 12)
+                RoundedRectangle(cornerRadius: 16)
                     .fill(Color.offBlack)
-                    .frame(width: 360, height: 45)
+                    .frame(width: 355, height: 45)
                     .shadow(color: Color.black.opacity(0.4),
                             radius: 10, x: 10, y: 10)
                     .shadow(color: Color.white.opacity(0.1),
                             radius: 6, x: -4, y: -4)
                 
-                HStack {
+                HStack() {
                     Text(setting_section)
                         .font(.title)
                         .fontWeight(.bold)
                         .scaleEffect(0.8)
                         .foregroundColor(Color.white.opacity(0.7))
+                        
                         .frame(width: 170, height: 25)
                     Spacer()
                     Image(systemName: icon)
