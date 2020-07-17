@@ -20,9 +20,16 @@ struct Settings: View {
                         .scaleEffect(1.1)
                         .foregroundColor(Color.white.opacity(0.7))
                         .frame(width: 120, height: 25)
+                        .padding(.top)
         
-                        .offset(x: -100, y: 55)
-                        .padding(.bottom, 100)
+                       
+                       
+                LongLine()
+                .frame(width: screen.width / 2)
+                .frame(height: 2)
+                    .padding(.bottom)
+                
+           
                 
                     
                
