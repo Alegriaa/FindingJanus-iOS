@@ -20,9 +20,21 @@ struct AboutView: View {
                     .scaleEffect(1.1)
                     .foregroundColor(Color.white.opacity(0.7))
                     .frame(width: 120, height: 25)
-                    
-                    .offset(x: -100, y: 55)
-                    .padding(.bottom, 100)
+                    .padding(.top)
+                
+                
+                
+                LongLine()
+                    .frame(width: screen.width / 2)
+                    .frame(height: 2)
+                    .padding(.bottom)
+                
+                Text("I hope to change the world with this app")
+                    .font(.headline)
+                    .fontWeight(.bold)
+                    .scaleEffect(1.1)
+                    .foregroundColor(Color.white.opacity(0.7))
+                
             }
         }
         .edgesIgnoringSafeArea(.all)
