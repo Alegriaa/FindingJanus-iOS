@@ -14,9 +14,6 @@ struct HomeScreenView: View {
             Color.offBlack
             
             VStack(spacing: 40) {
-                
-                
-                
                 VStack() {
                     HStack(spacing: 206){
                         ZStack() {
@@ -32,16 +29,8 @@ struct HomeScreenView: View {
                             Image(systemName: "list.dash")
                                 .foregroundColor(Color.white)
                                 .scaleEffect(1.3)
-                            
-                            
-                            
-                            
-                            
                         }
-                        
-                        
-                        
-                        
+                   
                         ZStack() {
                             RoundedRectangle(cornerRadius: 100)
                                 .fill(Color.offBlack)
@@ -55,11 +44,6 @@ struct HomeScreenView: View {
                             Image(systemName: "person.2.fill")
                                 .foregroundColor(Color.white.opacity(0.8))
                                 .scaleEffect(1.3)
-                            
-                            
-                            
-                            
-                            
                         }
                         
                         
@@ -75,12 +59,7 @@ struct HomeScreenView: View {
                         .foregroundColor(Color.white.opacity(0.7))
                     
                 }
-                
-                
-                
                 ZStack {
-                    
-                    
                     RoundedRectangle(cornerRadius: 100)
                         .fill(Color.offBlack)
                         .frame(width: 150)
@@ -140,8 +119,6 @@ struct HomeScreenView: View {
                         .font(.headline)
                         
                         .foregroundColor(Color.white)
-                    
-                    
                 }
                 .frame(width: screen.width)
                 .padding(20)
@@ -152,8 +129,6 @@ struct HomeScreenView: View {
                     .frame(width: UIScreen.screenWidth)
                 
             }
-
-            
         }
         .frame(width: screen.width / 2)
         .frame(height: screen.height)
@@ -161,12 +136,7 @@ struct HomeScreenView: View {
             
         .edgesIgnoringSafeArea(.all)
         .position(x: screen.width / 2, y: screen.height / 2)
-        
-        
     }
-    
-    
-    
 }
 
 
