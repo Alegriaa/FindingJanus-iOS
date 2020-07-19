@@ -29,7 +29,7 @@ struct AboutView: View {
                     .frame(height: 2)
                     .padding(.bottom)
                 
-                Text("I hope to change the world with this app")
+                Text("I hope to create beautiful things")
                     .font(.headline)
                     .fontWeight(.bold)
                     .scaleEffect(1.1)
