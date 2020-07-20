@@ -12,7 +12,7 @@ struct LongLine: View {
     var body: some View {
         ZStack {
             Color.offBlack
-
+            
             ZStack {
                 RoundedRectangle(cornerRadius: 100)
                     .fill(Color.offBlack)
@@ -34,7 +34,6 @@ struct LongLine: View {
                             .offset(x: -2, y: -2)
                             .mask(RoundedRectangle(cornerRadius: 100)
                                 .fill(LinearGradient(Color.clear, Color.offBlack)))
-                        
                 )
             }
             
