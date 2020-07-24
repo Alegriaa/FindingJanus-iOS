@@ -49,12 +49,15 @@ struct LogInView: View {
                     ZStack {
                         TextBubble()
                             .frame(width: 290, height: 40)
+                     
                     
                     Text("username..")
+                        
                                   .font(.headline)
-                                  .foregroundColor(Color.white.opacity(0.85))
+                                  .foregroundColor(Color.white.opacity(0.7))
                                   .frame(width: 200, height: 40)
                                   .scaledToFill()
+                            .offset(x: -100, y: 0)
                     }
                 
                 LongLine()
@@ -65,9 +68,10 @@ struct LogInView: View {
                             .frame(width: 310, height: 40)
                         Text("password..")
                         .font(.headline)
-                        .foregroundColor(Color.white.opacity(0.85))
+                        .foregroundColor(Color.white.opacity(0.7))
                         .frame(width: 200, height: 40)
                         .scaledToFill()
+                        .offset(x: -100, y: 0)
                     }
                 
                 Text("Forgot Password?")
