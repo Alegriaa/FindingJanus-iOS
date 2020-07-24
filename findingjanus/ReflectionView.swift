@@ -55,7 +55,7 @@ struct ReflectionView: View {
                     RoundedRectangle(cornerRadius: 20)
                         .fill(Color.offBlack)
                         .frame(width: screen.width - 20)
-                        .frame(height: 450)
+                        .frame(height: 420)
                         .shadow(color: Color.black.opacity(0.7),
                                 radius: 10, x: 10, y: 10)
                         .shadow(color: Color.white.opacity(0.1),

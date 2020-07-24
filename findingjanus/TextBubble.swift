@@ -22,10 +22,18 @@ struct TextBubble: View {
                         radius: 10, x: 10, y: 10)
                 .shadow(color: Color.white.opacity(0.1),
                         radius: 6, x: -4, y: -4)
-          
+            
+            RoundedRectangle(cornerRadius: 100)
+                .fill(Color.white.opacity(0.008))
+                .frame(width: 310, height: 30)
+                .shadow(color: Color.black.opacity(0.4),
+                        radius: 10, x: 10, y: 10)
+                .shadow(color: Color.white.opacity(0.1),
+                        radius: 6, x: -4, y: -4)
+            
         }
-        
-        
+            
+            
         .edgesIgnoringSafeArea(.all)
         
         
