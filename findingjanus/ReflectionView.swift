@@ -53,27 +53,24 @@ struct ReflectionView: View {
                 
                 ZStack {
                     RoundedRectangle(cornerRadius: 20)
-                        .fill(Color.offBlack)
-                        .frame(width: screen.width - 20)
-                        .frame(height: 420)
+                        .fill(Color.offBlack.opacity(0.8))
+                                        .frame(width: screen.width - 80)
+                        .frame(height: 350)
                         .shadow(color: Color.black.opacity(0.7),
                                 radius: 10, x: 10, y: 10)
                         .shadow(color: Color.white.opacity(0.1),
-                            radius: 6, x: -4, y: -4)
+                                radius: 6, x: -4, y: -4)
+                    VStack {
+                        Text("what's on your mind?")
+                            .foregroundColor(Color.white.opacity(0.7))
+                            .font(.title).scaleEffect(0.6)
+                        Text("please focus")
+                            .foregroundColor(Color.white.opacity(0.7))
+                            .font(.title).scaleEffect(0.6)
+                    }
                     
-                    RoundedRectangle(cornerRadius: 20)
-                        .fill(Color.offBlack.opacity(0.8))
-                                        .frame(width: screen.width - 80)
-                                        .frame(height: 350)
-                                        .shadow(color: Color.black.opacity(0.7),
-                                                radius: 10, x: 10, y: 10)
-                                        .shadow(color: Color.white.opacity(0.1),
-                                            radius: 6, x: -4, y: -4)
-                    Text("what's on your mind")
-                    .foregroundColor(Color.white.opacity(0.7))
-                                      .font(.title).scaleEffect(0.6)
                 }
-             
+                
                 HomeView()
                     .frame(width: UIScreen.screenWidth)
                     .frame(height: 80)
