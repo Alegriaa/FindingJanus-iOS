@@ -36,10 +36,12 @@ struct AboutView: View {
                     .foregroundColor(Color.white.opacity(0.7))
                 
             }
+            .frame(width: screen.width / 2)
+            .frame(height: screen.height)
+            .position(x: screen.width / 2, y: screen.height / 2)
         }
         .edgesIgnoringSafeArea(.all)
-        .frame(width: screen.width)
-        .frame(height: screen.height)
+        
     }
 }
 
