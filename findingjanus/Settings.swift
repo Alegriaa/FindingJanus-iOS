@@ -51,9 +51,12 @@ struct Settings: View {
                 
             }
         }
-        .edgesIgnoringSafeArea(.all)
-        .frame(width: screen.width)
+        .frame(width: screen.width / 2)
         .frame(height: screen.height)
+            
+            
+        .edgesIgnoringSafeArea(.all)
+        .position(x: screen.width / 2, y: screen.height / 2)
         
         
     }

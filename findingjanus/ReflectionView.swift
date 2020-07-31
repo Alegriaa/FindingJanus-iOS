@@ -73,12 +73,18 @@ struct ReflectionView: View {
                 
                 HomeView()
                     .frame(width: UIScreen.screenWidth)
-                    .frame(height: 80)
-                    .offset(x: 0, y: 0)
+                    .offset(x:0, y:30)
+                   
+                
                 
             }
         }
+        .frame(width: screen.width / 2)
+        .frame(height: screen.height)
+            
+            
         .edgesIgnoringSafeArea(.all)
+        .position(x: screen.width / 2, y: screen.height / 2)
     }
 }
 
