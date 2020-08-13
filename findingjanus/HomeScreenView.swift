@@ -19,31 +19,29 @@ struct HomeScreenView: View {
                         ZStack() {
                             RoundedRectangle(cornerRadius: 100)
                                 .fill(Color.offBlack)
-                                .frame(width: 54)
+                                .frame(width: 48, height: 48)
                                 
-                                .frame(height: 54)
+                                
                                 .shadow(color: Color.black.opacity(0.7),
                                         radius: 10, x: 10, y: 10)
                                 .shadow(color: Color.white.opacity(0.1),
                                         radius: 6, x: -4, y: -4)
                             Image(systemName: "list.dash")
                                 .foregroundColor(Color.white)
-                                .scaleEffect(1.3)
+                                .scaleEffect(1.1)
                         }
-                   
+                        
                         ZStack() {
                             RoundedRectangle(cornerRadius: 100)
                                 .fill(Color.offBlack)
-                                .frame(width: 54)
-                                
-                                .frame(height: 54)
+                                .frame(width: 48, height: 48)
                                 .shadow(color: Color.black.opacity(0.7),
                                         radius: 10, x: 10, y: 10)
                                 .shadow(color: Color.white.opacity(0.1),
                                         radius: 6, x: -4, y: -4)
                             Image(systemName: "person.2.fill")
                                 .foregroundColor(Color.white.opacity(0.8))
-                                .scaleEffect(1.3)
+                                .scaleEffect(1.1)
                         }
                         
                         
