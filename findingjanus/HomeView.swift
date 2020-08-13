@@ -24,40 +24,24 @@ extension LinearGradient {
 struct HomeView: View {
     var body: some View {
         ZStack{
-            
-            
             Color.off
             
+            RoundedRectangle(cornerRadius: 20)
+                .fill(Color.offBlack)
+                .frame(width: UIScreen.screenWidth - 25, height: 80)
+                .shadow(color: Color.black.opacity(0.7),
+                        radius: 10, x: 10, y: 10)
+                .shadow(color: Color.white.opacity(0.1),
+                        radius: 6, x: -4, y: -4)
             
-            
-            
-            
-            
-            
-            
-            
-       
+            HStack(spacing: 30) {
                 
-                
-              
-                HStack(spacing: 40) {
-                    
-                    homeButtons(icon: "house")
-                    homeButtons(icon: "person.fill")
-                    homeButtons(icon: "suit.heart.fill")
-                    homeButtons(icon: "gear")
-                    
-                    
-                }
-                
-              
-           
-                
-            
-            
-            
-            
-            
+                homeButtons(icon: "house")
+                homeButtons(icon: "person.fill")
+                homeButtons(icon: "suit.heart.fill")
+                homeButtons(icon: "gear")
+
+            }
         }
         .edgesIgnoringSafeArea(.all)
     }
@@ -76,14 +60,14 @@ struct homeButtons: View {
             ZStack {
                 RoundedRectangle(cornerRadius: 12)
                     .fill(Color.offBlack)
-                    .frame(width: 55, height: 55)
+                    .frame(width: 46, height: 46)
                     
                     .shadow(color: Color.black.opacity(0.7),
                             radius: 10, x: 10, y: 10)
                     .shadow(color: Color.white.opacity(0.1),
                             radius: 6, x: -4, y: -4)
                 Image(systemName: icon)
-                    .scaleEffect(1.8)
+                    .scaleEffect(1.4)
                     .foregroundColor(Color.white.opacity(0.7))
             }
         
