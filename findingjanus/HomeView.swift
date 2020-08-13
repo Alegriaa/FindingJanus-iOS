@@ -24,15 +24,15 @@ extension LinearGradient {
 struct HomeView: View {
     var body: some View {
         ZStack{
-            Color.off
+        
             
-            RoundedRectangle(cornerRadius: 20)
-                .fill(Color.offBlack)
-                .frame(width: UIScreen.screenWidth - 25, height: 80)
-                .shadow(color: Color.black.opacity(0.7),
-                        radius: 10, x: 10, y: 10)
-                .shadow(color: Color.white.opacity(0.1),
-                        radius: 6, x: -4, y: -4)
+//            RoundedRectangle(cornerRadius: 20)
+//                .fill(Color.offBlack)
+//                .frame(width: UIScreen.screenWidth - 28, height: 80)
+//                .shadow(color: Color.black.opacity(0.7),
+//                        radius: 10, x: 10, y: 10)
+//                .shadow(color: Color.white.opacity(0.1),
+//                        radius: 6, x: -4, y: -4)
             
             HStack(spacing: 30) {
                 
@@ -62,9 +62,9 @@ struct homeButtons: View {
                     .fill(Color.offBlack)
                     .frame(width: 46, height: 46)
                     
-                    .shadow(color: Color.black.opacity(0.7),
+                    .shadow(color: Color.black.opacity(0.8),
                             radius: 10, x: 10, y: 10)
-                    .shadow(color: Color.white.opacity(0.1),
+                     .shadow(color: Color(#colorLiteral(red: 0.2156862745, green: 0.8352941176, blue: 0.9098039216, alpha: 1)).opacity(0.2),
                             radius: 6, x: -4, y: -4)
                 Image(systemName: icon)
                     .scaleEffect(1.4)
