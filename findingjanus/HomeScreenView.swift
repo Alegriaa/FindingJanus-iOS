@@ -8,10 +8,18 @@
 
 import SwiftUI
 
+extension Color {
+static let offRed = Color(red: 24 / 255, green: 15 / 255, blue: 20/255)
+static let offNew = Color(red: 20 / 255, green: 18 / 255, blue: 20/255)
+static let offBlueish = Color(red: 20 / 255, green: 45 / 255, blue: 60/255)
+
+}
+
 struct HomeScreenView: View {
     var body: some View {
         ZStack{
             Color.offBlack
+            LinearGradient(Color.black, Color.offBlueish.opacity(0.00001))
             
             VStack(spacing: 40) {
                 VStack() {
@@ -20,11 +28,11 @@ struct HomeScreenView: View {
                             RoundedRectangle(cornerRadius: 100)
                                 .fill(Color.offBlack)
                                 .frame(width: 48, height: 48)
+                           
                                 
-                                
-                                .shadow(color: Color.black.opacity(0.7),
+                                .shadow(color: Color.black.opacity(0.9),
                                         radius: 10, x: 10, y: 10)
-                                .shadow(color: Color.white.opacity(0.1),
+                                .shadow(color: Color(#colorLiteral(red: 0.2156862745, green: 0.8352941176, blue: 0.9098039216, alpha: 1)).opacity(0.2),
                                         radius: 6, x: -4, y: -4)
                             Image(systemName: "list.dash")
                                 .foregroundColor(Color.white)
@@ -35,9 +43,9 @@ struct HomeScreenView: View {
                             RoundedRectangle(cornerRadius: 100)
                                 .fill(Color.offBlack)
                                 .frame(width: 48, height: 48)
-                                .shadow(color: Color.black.opacity(0.7),
+                                .shadow(color: Color.black.opacity(0.9),
                                         radius: 10, x: 10, y: 10)
-                                .shadow(color: Color.white.opacity(0.1),
+                                .shadow(color: Color.offBlueish.opacity(0.8),
                                         radius: 6, x: -4, y: -4)
                             Image(systemName: "person.2.fill")
                                 .foregroundColor(Color.white.opacity(0.8))
@@ -59,7 +67,7 @@ struct HomeScreenView: View {
                 }
                 ZStack {
                     RoundedRectangle(cornerRadius: 100)
-                        .fill(Color.offBlack)
+                        .fill(Color.offRed)
                         .frame(width: 150)
                         
                         .frame(height: 150)
@@ -71,13 +79,13 @@ struct HomeScreenView: View {
                     RoundedRectangle(cornerRadius: 100)
                         .fill(Color.offBlack)
                         .frame(width: 145, height: 145)
-                        .shadow(color: Color.black.opacity(0.4),
+                        .shadow(color: Color.black.opacity(0.8),
                                 radius: 10, x: 10, y: 10)
-                        .shadow(color: Color.white.opacity(0.1),
+                        .shadow(color: Color(#colorLiteral(red: 0.2156862745, green: 0.8352941176, blue: 0.9098039216, alpha: 1)).opacity(0.08),
                                 radius: 6, x: -4, y: -4)
                     
                     RoundedRectangle(cornerRadius: 100)
-                        .fill(Color.offBlack)
+                        .fill(Color.offNew)
                         .frame(width: 140, height: 140)
                         .overlay(
                             
