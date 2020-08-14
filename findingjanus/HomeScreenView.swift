@@ -9,11 +9,11 @@
 import SwiftUI
 
 extension Color {
-static let offRed = Color(red: 24 / 255, green: 15 / 255, blue: 20/255)
-static let offNew = Color(red: 20 / 255, green: 18 / 255, blue: 20/255)
-static let offBlueish = Color(red: 20 / 255, green: 45 / 255, blue: 60/255)
-static let buttonBlue = Color(red: 20 / 255, green: 20 / 255, blue: 30/255)
-
+    static let offRed = Color(red: 24 / 255, green: 15 / 255, blue: 20/255)
+    static let offNew = Color(red: 20 / 255, green: 18 / 255, blue: 20/255)
+    static let offBlueish = Color(red: 20 / 255, green: 45 / 255, blue: 60/255)
+    static let buttonBlue = Color(red: 20 / 255, green: 20 / 255, blue: 30/255)
+    
 }
 
 struct HomeScreenView: View {
@@ -29,7 +29,7 @@ struct HomeScreenView: View {
                             RoundedRectangle(cornerRadius: 100)
                                 .fill(Color.offBlack)
                                 .frame(width: 48, height: 48)
-                           
+                                
                                 
                                 .shadow(color: Color.black.opacity(0.9),
                                         radius: 10, x: 10, y: 10)
@@ -37,7 +37,7 @@ struct HomeScreenView: View {
                                         radius: 6, x: -4, y: -4)
                             Image(systemName: "list.dash")
                                 .foregroundColor(Color.white)
-                                .scaleEffect(1.1)
+                                .scaleEffect(1.2)
                         }
                         
                         ZStack() {
@@ -46,20 +46,20 @@ struct HomeScreenView: View {
                                 .frame(width: 48, height: 48)
                                 .shadow(color: Color.black.opacity(0.9),
                                         radius: 10, x: 10, y: 10)
-                                .shadow(color: Color.offBlueish.opacity(0.8),
+                                .shadow(color: Color(#colorLiteral(red: 0.2156862745, green: 0.8352941176, blue: 0.9098039216, alpha: 1)).opacity(0.2),
                                         radius: 6, x: -4, y: -4)
                             Image(systemName: "person.2.fill")
-                                .foregroundColor(Color.white.opacity(0.8))
+                                .foregroundColor(Color.white.opacity(0.85))
                                 .scaleEffect(1.1)
                         }
                         
                         
                     }
                     .padding(.top)
-                    .padding(30)
+                    
                     Text("hello")
                         .foregroundColor(Color.white.opacity(0.6))
-                    Text("gracie")
+                    Text("traveler")
                         .font(.title)
                         .fontWeight(.bold)
                         .scaleEffect(0.9)
@@ -90,7 +90,7 @@ struct HomeScreenView: View {
                         .overlay(
                             
                             RoundedRectangle(cornerRadius: 100)
-                                .stroke(Color.black,lineWidth: 5)
+                                .stroke(Color(.black),lineWidth: 5)
                                 .blur(radius: 4)
                                 .offset(x: 39, y: -10)
                                 .mask(RoundedRectangle(cornerRadius: 100)
@@ -100,19 +100,15 @@ struct HomeScreenView: View {
                         .overlay(
                             
                             RoundedRectangle(cornerRadius: 100)
-                                .stroke(Color.black, lineWidth: 6)
+                                .stroke(Color(#colorLiteral(red: 0.2156862745, green: 0.8352941176, blue: 0.9098039216, alpha: 1)).opacity(0.4), lineWidth: 6)
                                 .blur(radius: 4)
-                                .offset(x: -2, y: -2)
+                                .offset(x: -2, y: -10)
                                 .mask(RoundedRectangle(cornerRadius: 100)
                                     .fill(LinearGradient(Color.clear, Color.black.opacity(0.9))))
                     )
                     
                 }
-             
-                
-                
                 VStack(alignment: .center) {
-            
                     
                     Text("you are loved")
                         .font(.headline)
@@ -126,25 +122,24 @@ struct HomeScreenView: View {
                 .frame(width: screen.width)
                 .padding(10)
                 
-                         ZStack {
-                             RoundedRectangle(cornerRadius: 20)
-                                 .fill(Color.offBlack.opacity(0.8))
-                                 .shadow(color: Color.black.opacity(0.7),
-                                         radius: 10, x: 10, y: 10)
-                                 .shadow(color: Color.white.opacity(0.1),
-                                         radius: 6, x: -4, y: -4)
-                             VStack {
-                                 Text("you can do this, you are capable, you are beautiful, keep going, work as hard as you can, forgive yourself along the way, you have come so far, reach out for your dreams")
-                                 .font(.body)
-                                 .scaleEffect(0.9)
-                                 .foregroundColor(Color.white)
-                               
-                             }
-                             
-                         }
-                .frame(width: screen.width - 80)
-                .frame(height: 200)
-                
+                ZStack {
+                    RoundedRectangle(cornerRadius: 20)
+                        .fill(Color.offBlack.opacity(0.8))
+                        .shadow(color: Color.black.opacity(0.9),
+                                radius: 10, x: 10, y: 10)
+                        .shadow(color: Color(#colorLiteral(red: 0.2156862745, green: 0.8352941176, blue: 0.9098039216, alpha: 1)).opacity(0.1),
+                                radius: 6, x: -4, y: -4)
+                    VStack {
+                        Text("you can do this, you are capable, you are beautiful, keep going, work as hard as you can, forgive yourself along the way, you have come so far, reach out for your dreams")
+                            .font(.headline)
+                            .scaleEffect(0.9)
+                            .foregroundColor(Color.white)
+                            .padding(.horizontal, 10)
+                        
+                    }
+                    
+                }
+                .frame(width: screen.width - 80, height: 205)
                 
                 HomeView()
                     .frame(width: UIScreen.screenWidth)
