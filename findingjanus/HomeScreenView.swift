@@ -12,6 +12,7 @@ extension Color {
 static let offRed = Color(red: 24 / 255, green: 15 / 255, blue: 20/255)
 static let offNew = Color(red: 20 / 255, green: 18 / 255, blue: 20/255)
 static let offBlueish = Color(red: 20 / 255, green: 45 / 255, blue: 60/255)
+static let buttonBlue = Color(red: 20 / 255, green: 20 / 255, blue: 30/255)
 
 }
 
@@ -67,9 +68,8 @@ struct HomeScreenView: View {
                 }
                 ZStack {
                     RoundedRectangle(cornerRadius: 100)
-                        .fill(Color.offRed)
+                        .fill(Color.offBlack)
                         .frame(width: 150)
-                        
                         .frame(height: 150)
                         .shadow(color: Color.black.opacity(0.7),
                                 radius: 10, x: 10, y: 10)
@@ -85,16 +85,16 @@ struct HomeScreenView: View {
                                 radius: 6, x: -4, y: -4)
                     
                     RoundedRectangle(cornerRadius: 100)
-                        .fill(Color.offNew)
+                        .fill(Color.offBlack)
                         .frame(width: 140, height: 140)
                         .overlay(
                             
                             RoundedRectangle(cornerRadius: 100)
                                 .stroke(Color.black,lineWidth: 5)
                                 .blur(radius: 4)
-                                .offset(x: 2, y: 2)
+                                .offset(x: 39, y: -10)
                                 .mask(RoundedRectangle(cornerRadius: 100)
-                                    .fill(LinearGradient(Color.off, Color.clear)))
+                                    .fill(LinearGradient(Color.offBlack, Color.clear)))
                             
                     )
                         .overlay(
@@ -108,14 +108,11 @@ struct HomeScreenView: View {
                     )
                     
                 }
-                .padding(10)
+             
                 
                 
                 VStack(alignment: .center) {
-                    Text("you can do this, you are capable, you are beautiful, keep going, work as hard as you can, forgive yourself along the way, you have come so far, reach out for your dreams")
-                        .font(.body)
-                        .scaleEffect(0.9)
-                        .foregroundColor(Color.white)
+            
                     
                     Text("you are loved")
                         .font(.headline)
@@ -127,8 +124,26 @@ struct HomeScreenView: View {
                         .foregroundColor(Color.white)
                 }
                 .frame(width: screen.width)
-                .padding(20)
+                .padding(10)
                 
+                         ZStack {
+                             RoundedRectangle(cornerRadius: 20)
+                                 .fill(Color.offBlack.opacity(0.8))
+                                 .shadow(color: Color.black.opacity(0.7),
+                                         radius: 10, x: 10, y: 10)
+                                 .shadow(color: Color.white.opacity(0.1),
+                                         radius: 6, x: -4, y: -4)
+                             VStack {
+                                 Text("you can do this, you are capable, you are beautiful, keep going, work as hard as you can, forgive yourself along the way, you have come so far, reach out for your dreams")
+                                 .font(.body)
+                                 .scaleEffect(0.9)
+                                 .foregroundColor(Color.white)
+                               
+                             }
+                             
+                         }
+                .frame(width: screen.width - 80)
+                .frame(height: 200)
                 
                 
                 HomeView()
