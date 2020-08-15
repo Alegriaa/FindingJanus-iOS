@@ -31,7 +31,7 @@ struct HomeScreenView: View {
                                 .frame(width: 48, height: 48)
                                 
                                 
-                                .shadow(color: Color.black.opacity(0.9),
+                                .shadow(color: Color.black,
                                         radius: 10, x: 10, y: 10)
                                 .shadow(color: Color(#colorLiteral(red: 0.2156862745, green: 0.8352941176, blue: 0.9098039216, alpha: 1)).opacity(0.2),
                                         radius: 6, x: -4, y: -4)
@@ -44,7 +44,7 @@ struct HomeScreenView: View {
                             RoundedRectangle(cornerRadius: 100)
                                 .fill(Color.offBlack)
                                 .frame(width: 48, height: 48)
-                                .shadow(color: Color.black.opacity(0.9),
+                                .shadow(color: Color.black,
                                         radius: 10, x: 10, y: 10)
                                 .shadow(color: Color(#colorLiteral(red: 0.2156862745, green: 0.8352941176, blue: 0.9098039216, alpha: 1)).opacity(0.2),
                                         radius: 6, x: -4, y: -4)
@@ -100,9 +100,9 @@ struct HomeScreenView: View {
                         .overlay(
                             
                             RoundedRectangle(cornerRadius: 100)
-                                .stroke(Color(#colorLiteral(red: 0.2156862745, green: 0.8352941176, blue: 0.9098039216, alpha: 1)).opacity(0.4), lineWidth: 6)
+                                .stroke(Color(#colorLiteral(red: 0.2156862745, green: 0.8352941176, blue: 0.9098039216, alpha: 1)).opacity(0.3), lineWidth: 15)
                                 .blur(radius: 4)
-                                .offset(x: -2, y: -10)
+                                .offset(x: 2, y: -8)
                                 .mask(RoundedRectangle(cornerRadius: 100)
                                     .fill(LinearGradient(Color.clear, Color.black.opacity(0.9))))
                     )
@@ -125,12 +125,12 @@ struct HomeScreenView: View {
                 ZStack {
                     RoundedRectangle(cornerRadius: 20)
                         .fill(Color.offBlack.opacity(0.8))
-                        .shadow(color: Color.black.opacity(0.9),
+                        .shadow(color: Color.black,
                                 radius: 10, x: 10, y: 10)
                         .shadow(color: Color(#colorLiteral(red: 0.2156862745, green: 0.8352941176, blue: 0.9098039216, alpha: 1)).opacity(0.1),
                                 radius: 6, x: -4, y: -4)
                     VStack {
-                        Text("you can do this, you are capable, you are beautiful, keep going, work as hard as you can, forgive yourself along the way, you have come so far, reach out for your dreams")
+                        Text("never give up on life, enjoy every breath and release gratitude to the universe every day.")
                             .font(.headline)
                             .scaleEffect(0.9)
                             .foregroundColor(Color.white)
