@@ -69,7 +69,7 @@ struct homeButtons: View {
                             radius: 6, x: -4, y: -4)
                 Image(systemName: icon)
                     .scaleEffect(1.4)
-                    .foregroundColor(Color(#colorLiteral(red: 0.2156862745, green: 0.8352941176, blue: 0.9098039216, alpha: 1)).opacity(0.8))
+                    .foregroundColor(Color(#colorLiteral(red: 0.2156862745, green: 0.8352941176, blue: 0.9098039216, alpha: 1)).opacity(0.7))
 
             }
         

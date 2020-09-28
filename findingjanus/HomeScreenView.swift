@@ -59,7 +59,7 @@ struct HomeScreenView: View {
                     
                     Text("hello")
                         .foregroundColor(Color.white.opacity(0.6))
-                    Text("traveler")
+                    Text("Brian")
                         .font(.title)
                         .fontWeight(.bold)
                         .scaleEffect(0.9)
@@ -95,7 +95,7 @@ struct HomeScreenView: View {
                                 .offset(x: 39, y: -10)
                                 .mask(RoundedRectangle(cornerRadius: 100)
                                     .fill(LinearGradient(Color.offBlack, Color.clear)))
-                            
+                        
                     )
                         .overlay(
                             
@@ -131,6 +131,11 @@ struct HomeScreenView: View {
                                 radius: 6, x: -4, y: -4)
                     VStack {
                         Text("never give up on life, enjoy every breath and release gratitude to the universe every day.")
+                            .font(.headline)
+                            .scaleEffect(0.9)
+                            .foregroundColor(Color.white)
+                            .padding(.horizontal, 10)
+                        Text("everything will be okay, enjoy life")
                             .font(.headline)
                             .scaleEffect(0.9)
                             .foregroundColor(Color.white)
