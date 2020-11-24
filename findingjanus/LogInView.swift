@@ -9,6 +9,11 @@
 import SwiftUI
 
 struct LogInView: View {
+    // to automatically render our view depending on the stored content
+    // connecting this to our view
+    // State: A persistnet value of a given type, through which a view reads and monitors the value
+    @State var username: String = ""
+    @State var password: String = ""
     
     
     var body: some View {
@@ -50,14 +55,13 @@ struct LogInView: View {
                         TextBubble()
                             .frame(width: 290, height: 40)
                      
-                    
-                    Text("username..")
-                        
+                        // to bind objects to a State property, we have to insert the properties name with a dollar sign.
+                        TextField("username" , text: $username)
+                                .frame(width: 200, height: 40)
                                   .font(.headline)
-                                  .foregroundColor(Color.white.opacity(0.7))
-                                  .frame(width: 200, height: 40)
+                                  .foregroundColor(Color.red)
                                   .scaledToFill()
-                            .offset(x: -100, y: 0)
+                            .offset(x: -50, y: 0)
                     }
                 
                 LongLine()
@@ -66,12 +70,12 @@ struct LogInView: View {
                     ZStack {
                         TextBubble()
                             .frame(width: 310, height: 40)
-                        Text("password..")
+                        SecureField("password", text: $password)
                         .font(.headline)
                         .foregroundColor(Color.white.opacity(0.7))
                         .frame(width: 200, height: 40)
                         .scaledToFill()
-                        .offset(x: -100, y: 0)
+                        .offset(x: -50, y: 0)
                     }
                 
                 Text("Forgot Password?")
@@ -83,8 +87,21 @@ struct LogInView: View {
                     .offset(x: 70, y: -20)
                 LongLine()
                     .frame(width: 380, height: 3)
+                    ZStack{
+                        TextBubble()
+                          
+                        Text("login")
+                            .foregroundColor(.white)
+                            .padding()
+                    Button(action: {print("Button Tapped")}){
+                      //  HomeScreenView()
+                    }
+                    }
+                    .frame(width: 100, height: 40)
                 }
+               
             }
+            
         }
         .edgesIgnoringSafeArea(.all)
     }
