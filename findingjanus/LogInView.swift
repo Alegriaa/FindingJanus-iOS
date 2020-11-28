@@ -17,6 +17,9 @@ struct LogInView: View {
     @State var authenticationFailed: Bool = false
     @State var authenticationSucceeded: Bool = false
     
+    let storedUsername = "Myusername"
+    let storedPassword = "Mypassword"
+    
     
     var body: some View {
         ZStack{
@@ -91,7 +94,17 @@ struct LogInView: View {
                             Text("login")
                                 .foregroundColor(.white)
                                 .padding()
-                        Button(action: {print("Button Tapped")}){
+                        Button(action: {
+                                if self.username == storedUsername && self.password == storedPassword {
+                            self.authenticationSucceeded = true
+                                    self.authenticationFailed = false
+                                } else {
+                                    self.authenticationFailed = true
+                                }
+                            
+                            
+                        }){
+                         
                           //  HomeScreenView()
                         }
                         }
