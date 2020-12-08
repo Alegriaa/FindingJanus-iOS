@@ -27,7 +27,7 @@ struct LogInView: View {
             VStack(spacing: 40) {
                 ZStack {
                     RoundedRectangle(cornerRadius: 100)
-                       
+                        
                         .fill(Color.offBlack)
                         .frame(width: 220)
                         //.padding(.bottom, 52)
@@ -51,7 +51,7 @@ struct LogInView: View {
                 }
                 
                 ZStack {
-                   
+                    
                     VStack(spacing: 25) {
                         
                         LongLine()
@@ -61,14 +61,14 @@ struct LogInView: View {
                         ZStack {
                             TextBubble()
                                 .frame(width: 290, height: 40)
-                         
+                            
                             // to bind objects to a State property, we have to insert the properties name with a dollar sign.
                             UsernameTextField(username: $username)
                         }
-                    
-                    LongLine()
-                        .frame(width: 330, height: 3)
-                    
+                        
+                        LongLine()
+                            .frame(width: 330, height: 3)
+                        
                         ZStack {
                             TextBubble()
                                 .frame(width: 310, height: 40)
@@ -78,52 +78,52 @@ struct LogInView: View {
                             Text("incorrect login information")
                                 .foregroundColor(.red)
                         }
-                    
-                    Text("Forgot Password?")
-                        .font(.body)
-                        .foregroundColor(Color.white.opacity(0.8))
-                        .padding(.top)
-                        .scaleEffect(0.8)
-                        .frame(width: 200, height: 30, alignment: .trailing)
-                        .offset(x: 70, y: -20)
-                    LongLine()
-                        .frame(width: 380, height: 3)
+                        
+                        Text("Forgot Password?")
+                            .font(.body)
+                            .foregroundColor(Color.white.opacity(0.8))
+                            .padding(.top)
+                            .scaleEffect(0.8)
+                            .frame(width: 200, height: 30, alignment: .trailing)
+                            .offset(x: 70, y: -20)
+                        LongLine()
+                            .frame(width: 380, height: 3)
                         ZStack{
                             TextBubble()
-                              
+                            
                             Text("login")
                                 .foregroundColor(.white)
                                 .padding()
-                        Button(action: {
+                            Button(action: {
                                 if self.username == storedUsername && self.password == storedPassword {
-                            self.authenticationSucceeded = true
+                                    self.authenticationSucceeded = true
                                     self.authenticationFailed = false
                                 } else {
                                     self.authenticationFailed = true
                                 }
-                            
-                            
-                        }){
-                         
-                          //  HomeScreenView()
-                        }
+                                
+                                
+                            }){
+                                
+                                //  HomeScreenView()
+                            }
                         }
                         .frame(width: 100, height: 40)
                     }
                     if authenticationSucceeded {
-                    Text("Login Succeeded")
-                        .foregroundColor(.blue)
-                        .font(.headline)
-                        .frame(width: 200, height: 60)
-                        .background(Color.white)
-                        .cornerRadius(20)
-                        .offset(y: -10)
-                        .animation(Animation.default)
+                        Text("Login Succeeded")
+                            .foregroundColor(.blue)
+                            .font(.headline)
+                            .frame(width: 200, height: 60)
+                            .background(Color.white)
+                            .cornerRadius(20)
+                            .offset(y: -10)
+                            .animation(Animation.default)
                         
                     }
                 }
-               
-               
+                
+                
             }
             
         }

@@ -94,9 +94,9 @@ struct HomeScreenView: View {
                                 .blur(radius: 4)
                                 .offset(x: 39, y: -10)
                                 .mask(RoundedRectangle(cornerRadius: 100)
-                                    .fill(LinearGradient(Color.offBlack, Color.clear)))
-                        
-                    )
+                                        .fill(LinearGradient(Color.offBlack, Color.clear)))
+                            
+                        )
                         .overlay(
                             
                             RoundedRectangle(cornerRadius: 100)
@@ -104,8 +104,8 @@ struct HomeScreenView: View {
                                 .blur(radius: 4)
                                 .offset(x: 2, y: -8)
                                 .mask(RoundedRectangle(cornerRadius: 100)
-                                    .fill(LinearGradient(Color.clear, Color.black.opacity(0.9))))
-                    )
+                                        .fill(LinearGradient(Color.clear, Color.black.opacity(0.9))))
+                        )
                     
                 }
                 VStack(alignment: .center) {
@@ -153,8 +153,8 @@ struct HomeScreenView: View {
         }
         .frame(width: screen.width / 2)
         .frame(height: screen.height)
-            
-            
+        
+        
         .edgesIgnoringSafeArea(.all)
         .position(x: screen.width / 2, y: screen.height / 2)
     }
