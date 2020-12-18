@@ -11,6 +11,7 @@
 		0007F5EC2451850100777116 /* Testing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0007F5EB2451850100777116 /* Testing.swift */; };
 		0017292B24D73D2200138F47 /* NotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0017292A24D73D2200138F47 /* NotesView.swift */; };
 		002FA29824C6B66900B128A8 /* ReflectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002FA29724C6B66900B128A8 /* ReflectionView.swift */; };
+		00300C6C258CAD5300EC0BDF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00300C6B258CAD5300EC0BDF /* GoogleService-Info.plist */; };
 		008D67E0247A37A300C6A581 /* LogInTextBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008D67DF247A37A300C6A581 /* LogInTextBox.swift */; };
 		008D67E2247A465C00C6A581 /* LongLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008D67E1247A465C00C6A581 /* LongLine.swift */; };
 		008D67E4247A46EE00C6A581 /* ShortLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008D67E3247A46EE00C6A581 /* ShortLine.swift */; };
@@ -27,6 +28,7 @@
 		00FDE18024517FA000F95A4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00FDE17F24517FA000F95A4D /* Assets.xcassets */; };
 		00FDE18324517FA000F95A4D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00FDE18224517FA000F95A4D /* Preview Assets.xcassets */; };
 		00FDE18624517FA000F95A4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00FDE18424517FA000F95A4D /* LaunchScreen.storyboard */; };
+		B5377A0A1AC17DA848F27FB2 /* Pods_findingjanus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F09AEEC0F7FC4BE521D4EE6D /* Pods_findingjanus.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,7 @@
 		0007F5EB2451850100777116 /* Testing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Testing.swift; sourceTree = "<group>"; };
 		0017292A24D73D2200138F47 /* NotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesView.swift; sourceTree = "<group>"; };
 		002FA29724C6B66900B128A8 /* ReflectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectionView.swift; sourceTree = "<group>"; };
+		00300C6B258CAD5300EC0BDF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		008D67DF247A37A300C6A581 /* LogInTextBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInTextBox.swift; sourceTree = "<group>"; };
 		008D67E1247A465C00C6A581 /* LongLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongLine.swift; sourceTree = "<group>"; };
 		008D67E3247A46EE00C6A581 /* ShortLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortLine.swift; sourceTree = "<group>"; };
@@ -52,6 +55,9 @@
 		00FDE18224517FA000F95A4D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		00FDE18524517FA000F95A4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00FDE18724517FA000F95A4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF2FE3197FC27DA95B66D1A3 /* Pods-findingjanus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-findingjanus.debug.xcconfig"; path = "Target Support Files/Pods-findingjanus/Pods-findingjanus.debug.xcconfig"; sourceTree = "<group>"; };
+		EA3BA20951CC954E1689C107 /* Pods-findingjanus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-findingjanus.release.xcconfig"; path = "Target Support Files/Pods-findingjanus/Pods-findingjanus.release.xcconfig"; sourceTree = "<group>"; };
+		F09AEEC0F7FC4BE521D4EE6D /* Pods_findingjanus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_findingjanus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5377A0A1AC17DA848F27FB2 /* Pods_findingjanus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +77,8 @@
 			children = (
 				00FDE17524517F9E00F95A4D /* findingjanus */,
 				00FDE17424517F9E00F95A4D /* Products */,
+				A95DE0DC9DF57B44273C8CD4 /* Pods */,
+				59A366F1C965D8007F7BA1B9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +109,7 @@
 				008E4D3624834C7700265DB1 /* TextBubble.swift */,
 				008D67E1247A465C00C6A581 /* LongLine.swift */,
 				008D67E3247A46EE00C6A581 /* ShortLine.swift */,
+				00300C6B258CAD5300EC0BDF /* GoogleService-Info.plist */,
 				00FDE17F24517FA000F95A4D /* Assets.xcassets */,
 				00FDE18424517FA000F95A4D /* LaunchScreen.storyboard */,
 				00FDE18724517FA000F95A4D /* Info.plist */,
@@ -117,6 +127,24 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		59A366F1C965D8007F7BA1B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F09AEEC0F7FC4BE521D4EE6D /* Pods_findingjanus.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A95DE0DC9DF57B44273C8CD4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DF2FE3197FC27DA95B66D1A3 /* Pods-findingjanus.debug.xcconfig */,
+				EA3BA20951CC954E1689C107 /* Pods-findingjanus.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -124,9 +152,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00FDE18A24517FA000F95A4D /* Build configuration list for PBXNativeTarget "findingjanus" */;
 			buildPhases = (
+				6259710B6370818C7D84C816 /* [CP] Check Pods Manifest.lock */,
 				00FDE16F24517F9E00F95A4D /* Sources */,
 				00FDE17024517F9E00F95A4D /* Frameworks */,
 				00FDE17124517F9E00F95A4D /* Resources */,
+				77482C733203BD9198C0A13B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -176,12 +206,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				00FDE18624517FA000F95A4D /* LaunchScreen.storyboard in Resources */,
+				00300C6C258CAD5300EC0BDF /* GoogleService-Info.plist in Resources */,
 				00FDE18324517FA000F95A4D /* Preview Assets.xcassets in Resources */,
 				00FDE18024517FA000F95A4D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6259710B6370818C7D84C816 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-findingjanus-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77482C733203BD9198C0A13B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-findingjanus/Pods-findingjanus-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-findingjanus/Pods-findingjanus-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-findingjanus/Pods-findingjanus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		00FDE16F24517F9E00F95A4D /* Sources */ = {
@@ -340,6 +413,7 @@
 		};
 		00FDE18B24517FA000F95A4D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF2FE3197FC27DA95B66D1A3 /* Pods-findingjanus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -359,6 +433,7 @@
 		};
 		00FDE18C24517FA000F95A4D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA3BA20951CC954E1689C107 /* Pods-findingjanus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
