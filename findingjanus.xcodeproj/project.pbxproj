@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,7 @@
 		00B215C12492070100F31DF8 /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B215C02492070100F31DF8 /* HomeScreenView.swift */; };
 		00B23D2F257F63E10057CB21 /* BasicUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B23D2E257F63E10057CB21 /* BasicUI.swift */; };
 		00D38B99245800D500FD1C29 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D38B98245800D500FD1C29 /* LogInView.swift */; };
+		00DE1DD1258DF114002556F2 /* StoreSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DE1DD0258DF114002556F2 /* StoreSession.swift */; };
 		00F3D7F3249C938F00057101 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F3D7F2249C938F00057101 /* Settings.swift */; };
 		00FDE17724517F9E00F95A4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FDE17624517F9E00F95A4D /* AppDelegate.swift */; };
 		00FDE17924517F9E00F95A4D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FDE17824517F9E00F95A4D /* SceneDelegate.swift */; };
@@ -45,6 +46,7 @@
 		00B215C02492070100F31DF8 /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
 		00B23D2E257F63E10057CB21 /* BasicUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicUI.swift; sourceTree = "<group>"; };
 		00D38B98245800D500FD1C29 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
+		00DE1DD0258DF114002556F2 /* StoreSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreSession.swift; sourceTree = "<group>"; };
 		00F3D7F2249C938F00057101 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		00FDE17324517F9E00F95A4D /* findingjanus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = findingjanus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00FDE17624517F9E00F95A4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				00FDE17D24517F9E00F95A4D /* ContentView.swift */,
 				0007F5E92451812B00777116 /* HomeView.swift */,
 				00D38B98245800D500FD1C29 /* LogInView.swift */,
+				00DE1DD0258DF114002556F2 /* StoreSession.swift */,
 				00F3D7F2249C938F00057101 /* Settings.swift */,
 				00A5028124BAE31F0078E94A /* AboutView.swift */,
 				00B215C02492070100F31DF8 /* HomeScreenView.swift */,
@@ -141,7 +144,6 @@
 				DF2FE3197FC27DA95B66D1A3 /* Pods-findingjanus.debug.xcconfig */,
 				EA3BA20951CC954E1689C107 /* Pods-findingjanus.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -263,6 +265,7 @@
 			files = (
 				0007F5EC2451850100777116 /* Testing.swift in Sources */,
 				002FA29824C6B66900B128A8 /* ReflectionView.swift in Sources */,
+				00DE1DD1258DF114002556F2 /* StoreSession.swift in Sources */,
 				00D38B99245800D500FD1C29 /* LogInView.swift in Sources */,
 				00F3D7F3249C938F00057101 /* Settings.swift in Sources */,
 				008D67E4247A46EE00C6A581 /* ShortLine.swift in Sources */,

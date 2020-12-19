@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct LogInView: View {
     // to automatically render our view depending on the stored content
@@ -25,30 +26,7 @@ struct LogInView: View {
         ZStack{
             Color.offBlack
             VStack(spacing: 40) {
-                ZStack {
-                    RoundedRectangle(cornerRadius: 100)
-                        
-                        .fill(Color.offBlack)
-                        .frame(width: 220)
-                        //.padding(.bottom, 52)
-                        
-                        .frame(height: 220)
-                        .shadow(color: Color.black.opacity(0.7),
-                                radius: 10, x: 10, y: 10)
-                        .shadow(color: Color.white.opacity(0.1),
-                                radius: 6, x: -4, y: -4)
-                    VStack {
-                        Text("focus")
-                            
-                            .font(.headline)
-                            .fontWeight(.heavy)
-                            .foregroundColor(Color.white.opacity(0.8))
-                            .frame(width: 400, height: 100)
-                        Image(systemName: "suit.heart.fill")
-                            .scaleEffect(3)
-                            .foregroundColor(Color.white.opacity(0.7))
-                    }
-                }
+            
                 
                 ZStack {
                     
